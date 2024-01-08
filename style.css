@@ -1,5 +1,43 @@
+section{
+padding-top: 128px;
+}
 .navbar {
 
     background-color: aqua;
 box-shadow: 0 0 0 5px rgba(0, 0, 0, 0.50);
+}
+
+.home h1 {
+    font-size: 76px;
+
+}
+.home h3 {
+    font-size: 48px;
+}
+.btn.boton {
+    border: 3px solid black;
+    border-radius: 24px;
+}
+.btn.boton:hover{
+    border: 3px solid green;
+    background-color: goldenrod;
+    color: white;
+}
+.home .arrow img {
+    width: 60px;
+}
+
+#key {
+    animation: 5s upDown infinite;
+}
+@keyframes upDown{
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(30px);
+    }
+    100%{
+        transform: translateY(0);
+    }
 }
