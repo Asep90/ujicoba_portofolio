@@ -1,5 +1,17 @@
 section{
 padding-top: 128px;
+position: relative;
+}
+section::before{
+    z-index: -1;
+    content: '';
+    font-size: 72px;
+    color: goldenrod;
+    opacity: 0.25px;
+    position: absolute;
+    top: 20px;
+    left:-30px;
+    font-weight: 700;
 }
 .navbar {
 
@@ -18,7 +30,7 @@ box-shadow: 0 0 0 5px rgba(0, 0, 0, 0.50);
     border: 3px solid black;
     border-radius: 24px;
 }
-.btn.boton:hover{
+.btn.boton:hover, .btn.btn.boton.active{
     border: 3px solid green;
     background-color: goldenrod;
     color: white;
@@ -40,4 +52,19 @@ box-shadow: 0 0 0 5px rgba(0, 0, 0, 0.50);
     100%{
         transform: translateY(0);
     }
+}
+.about-exp-item-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.about-exp-item {
+    margin-top: 32px;
+}
+.about::before{
+    content: 'About';
+    
+}
+.about-exp-item-detail {
+    display: none;
 }
