@@ -18,3 +18,26 @@ function toggleDetail (e){
 
   
 }
+function onSubmit(e){
+  e.preventDefault()
+  const email = $("#inp-email")
+  const subject = $("#inp-subject")
+  const message =$("#inp-message")
+
+  if(!$(email).val()){
+ alert("Email masih kosong")
+  }else if(!$(subject).val()){
+    alert("Subject masih kosong")
+  }else if (!$(message).val()){
+    alert("Message masih kosong")
+  }else {
+    alert(" Form Submit")
+    $(email).val("")
+    $(subject).val("")
+    $(message).val("")
+
+    
+    
+  }
+}
+  
