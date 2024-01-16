@@ -72,11 +72,11 @@ box-shadow: 0 0 0 5px rgba(0, 0, 0, 0.50);
     content: 'Work';
 }
 .work-img img{
-    display: 100%;
+    width: 100%;
 }
 .work-img {
     display: grid;
-    grid-template-columns: repeat(2,1rf);
+    grid-template-columns: repeat(2, 1rf);
     grid-template-areas: "work-1 work-2" "work-3 work-3";
     gap: 16px;
 }
@@ -130,4 +130,20 @@ font-size: 30px;
 }
 .font-label{
     font-weight: 700;
+}
+.home img {
+    width: 100%;
+}
+@media only screen and (max-width: 576px) {
+    section::before {
+        left: -10px;
+        font-size: 64px;
+    }
+    
+}
+@media only screen and (max-width: 760px) {
+    .home img {
+        width:50%;
+    }
+    
 }
